@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Comfortaa:wght@700&family=Sansita+Swashed&family=Secular+One&display=swap');
+
+:root{
+    --white:rgb(250, 250, 250);
+    --whts:hsl(141, 72%, 44%);
+    --blue:#3097C8;
+    --bg-img: rgba(224, 163, 32, 0.075);
+    --gra:rgba(30, 30, 30, .90);
+    --bg-body:rgb(245, 245, 245);
+}
+
+body{
+    background: var(--bg-body);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background-color: var(--bg-body);
+    z-index: 100;
+}
+
+.header{
+    background-image: linear-gradient(to top, rgba(47, 47, 47, 0.836) 0%, rgba(0, 0, 0, 0.719) 100%), url(../img/clint-bustrillos-K7OUs6y_cm8-unsplash.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.logo{
+    font-family: 'Sansita Swashed', cursive;
+}
+.title{
+    color: var(--bg-body);
+}
+
+.menu{
+  width: 100%;
+  height: 100vh;
+  top: -150%;  
+  position: fixed;
+  z-index: 10;  
+  background-color: var(--gra);
+  backdrop-filter: blur(10px);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+  transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+}
+
+.show-menu{
+    top: 0;
+}
+
+.dmenu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.dservices{
+    transition: all ease-in-out 600ms ;
+    cursor: pointer;
+    color: var(--bg-body);
+    border: 1px solid var(--gra) ;
+}
+
+.dservices:hover{
+    background: var(--blue);
+}
+
+.btn__whts{
+    width: 50%;
+    height: 50px;
+    border: solid 2px var(--whts);
+    background-color: var(--bg-body);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 10;
+    top: 93%;
+    color: var(--whts);
+    transition: all 500ms ;
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn__whts:hover{
+    background-color: var(--whts);
+    color: var(--bg-body);
+}
+
+.uil-apps{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.bxl-whatsapp{
+    font-size: 1.5rem;
+}
+
+.uil-times{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.circle{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: var(--bg-img);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+span{
+    color: var(--blue);
+}
+.footer{
+    width: 100%;
+    height: 510px;
+    background-color: rgb(44, 42, 42);
+}
+
+a{
+   margin-top: 8px;
+   margin-bottom: 2px; 
+}
+
+a:hover{
+    color: var(--blue);
+}
+
+@media (min-width: 360px){
+    .btn__whts{
+      width: 60%;
+      font-size: 1rem;
+      top: 94%;
+    }   
+
+    .bxl-whatsapp{
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 900px){
+    .btn__whts{
+        margin: 0;
+        margin-left: 3rem;
+        top: 90%;
+        width: 20%;
+    }
+}
+
+@media (min-width: 1024px){
+    .dmenu{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .marca, .proceso{
+        background: var(--white);
+        border-radius: 25px;
+    }
+
+    .footer{
+        height: 300px;
+    }
+
+    .footer__container{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+    .copyri{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media only screen and (min-device-height : 320px) and (max-device-height: 430px) {
+    
+    .dmenu{
+        grid-template-columns: repeat(4, 1fr) ;
+    }
+    
+    .btn__whts{
+        width: 30%;
+        font-size: 1rem;
+        top: 88%;
+    }  
+
+    .footer{
+        height: 300px;
+    }
+
+    .footer__container{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .copyri{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
