@@ -8,9 +8,12 @@ var nav = document.querySelector(".nav");
 
 btnMenu.addEventListener('click', ()=>{   //Mostrar menu
         menu.classList.toggle('show-menu');
-        icon.classList.toggle('uil-apps');
+        icon.classList.toggle('uil-apps'); //Cambio de iconos 
         icon.classList.toggle('uil-times');
+        document.body.classList.toggle('no-scroll'); //Desactiva el sroll al dar click
+
 })
+
 
 
 // window.onscroll = function(){

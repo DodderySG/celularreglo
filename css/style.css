@@ -73,6 +73,10 @@ body{
     background: var(--blue);
 }
 
+.no-scroll{
+    max-height: 100vh;
+    overflow: hidden;
+}
 .btn__whts{
     width: 50%;
     height: 50px;
@@ -144,13 +148,12 @@ a:hover{
     .btn__whts{
       width: 60%;
       font-size: 1rem;
-      top: 94%;
+      top: 92%;
     }   
 
     .bxl-whatsapp{
         font-size: 2rem;
     }
-
 }
 
 @media (min-width: 900px){
