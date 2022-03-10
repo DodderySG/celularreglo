@@ -39,7 +39,24 @@ body{
 
 .logo{
     font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    align-items: center;
 }
+
+#screwic{
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+}
+
+.show-sc{
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+}
+
 .title{
     color: var(--bg-body);
 }
