@@ -3,7 +3,7 @@ const  menu = document.getElementById("menu"),
     btnMenu=document.querySelector("#btn-menu"),
     icon = document.querySelector('.icon');
 
-var nav = document.getElementById("nav"); 
+var nav = document.getElementById("nav");
 let subm=  document.getElementById("subm");
 
 
@@ -24,6 +24,8 @@ btnMenu.addEventListener('click', ()=>{   //Mostrar menu
 
 window.addEventListener("scroll",function(){
     nav.classList.toggle("navbg",window.scrollY>0);
+    menu.classList.toggle('menubg',this.window.scrollY>0);
+
 })
 
 

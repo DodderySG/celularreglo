@@ -73,12 +73,14 @@ body{
   top: -150%;  
   position: fixed;
   z-index: 10;  
-  background-color: var(--gra);
   backdrop-filter: blur(10px);
   transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
   transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
 }
 
+.menubg{
+  background-color: var(--gra);
+}
 .show-menu{
     top: 0;
 }
