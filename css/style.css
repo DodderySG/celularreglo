@@ -21,8 +21,14 @@ body{
     width: 100%;
     height: 40px;
     position: fixed;
-    background-color: var(--bg-body);
     z-index: 100;
+    color: var(--bg-body);
+    transition: all ease-in-out 300ms ;
+}
+
+.navbg{
+    background-color: var(--bg-body);
+    color: var(--gra);
 }
 
 .header{
@@ -97,6 +103,7 @@ body{
     max-height: 100vh;
     overflow: hidden;
 }
+
 .btn__whts{
     width: 50%;
     height: 50px;
@@ -186,9 +193,15 @@ a:hover{
 }
 
 @media (min-width: 1024px){
-    .dmenu{
-        grid-template-columns: repeat(4,1fr);
+
+    .nav{
+        height: 45px;
     }
+
+    .dmenu{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .marca, .proceso{
         background: var(--white);
         border-radius: 25px;
@@ -203,17 +216,18 @@ a:hover{
         grid-template-columns:repeat(2, 1fr);
         column-gap: 1.5rem;
     }
+
     .copyri{
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end:3;
     }
 }
 
 @media only screen and (min-device-height : 320px) and (max-device-height: 430px) {
-    
+/*     
     .dmenu{
         grid-template-columns: repeat(4, 1fr) ;
-    }
+    } */
     
     .btn__whts{
         width: 30%;
