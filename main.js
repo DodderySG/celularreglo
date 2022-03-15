@@ -12,7 +12,6 @@ btnMenu.addEventListener('click', ()=>{   //Mostrar menu
         icon.classList.toggle('uil-apps'); //Cambio de iconos 
         icon.classList.toggle('uil-times');
         document.getElementById("screwic").classList.toggle('show-sc'); //Tornillo girando 
-        // nav.classList.toggle('navbg');
         document.body.classList.toggle('no-scroll'); //Desactiva el sroll al dar click
 
         if(menu.classList.contains('show-menu')){ //Pregunta si tiene esa clase 
@@ -25,7 +24,6 @@ btnMenu.addEventListener('click', ()=>{   //Mostrar menu
 window.addEventListener("scroll",function(){
     nav.classList.toggle("navbg",window.scrollY>0);
     menu.classList.toggle('menubg',this.window.scrollY>0);
-
 })
 
 
