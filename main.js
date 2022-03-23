@@ -15,9 +15,9 @@ btnMenu.addEventListener('click', ()=>{   //Mostrar menu
         document.body.classList.toggle('no-scroll'); //Desactiva el sroll al dar click
 
         if(menu.classList.contains('show-menu')){ //Pregunta si tiene esa clase 
-            subm.textContent="Servicios";
+            subm.textContent="SERVICIOS ";
         }else{
-            subm.textContent="Celularreglo";
+            subm.textContent="CELULARREGLO";
         }
 })
 
